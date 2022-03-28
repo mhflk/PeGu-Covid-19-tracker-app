@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            PeGu
+        </div>
+        <div class="right">
+            <a href="app-pages.html" class="headerButton toggle-searchbox">
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- Search Component -->
+    
+    <!-- * Search Component -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <main>
+            <div class="stats">
+              <div class="latest-report">
+                <div class="country">
+                  <div class="name">Loading...</div>
+                  <div class="change-country">change</div>
+                  <div class="search-country hide">
+                    <div class="search-box">
+                      <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Search Country..."
+                      />
+                      <img class="close" src="./resources/img/close.svg" alt="" />
+                    </div>
+                    <div class="country-list"></div>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                                <div class="div3 mx-auto">
+                                    <div class="total-cases">
+                                        <div class="title12">Total Cases</div>
+                                        <div class="value">0</div>
+                                        
+                                    </div>
+                                    
+                                     
+                                </div>
+                    </div>
+
+
+                    
+    
+    
+                    <div class="col-md-4 col-sm-4">
+                        <div class="div2 mx-auto">
+                            <div class="recovered1">
+                                <div class="title12">Recovered</div>
+                                <div class="value" id="recovered">0</div>
+                                
+                              </div>
+                           
+                            
+                        </div>
+                      </div>
+
+                    <div class="col-md-4 col-sm-4">
+                                <div class="div1 mx-auto">
+                                    <div class="deaths">
+                                        <div class="title12">Deaths</div>
+                                        <div class="value">0</div>
+                                        
+                                      </div>
+                                     
+                                </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+    
+    
+    
+                    
+
+                    
+
+                </div>
+    
+    
+
+
+
+                
+                
+                
+                
+                
+                
+                
+              </div>
+              <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+              </div>
+              
+            </div>
+          </main>
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu rounded ">
+        <a href="index.html" class="item active">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+                <strong>Home</strong>
+            </div>
+        </a>
+        <a href="page-blank.html" class="item">
+            <div class="col">
+                <ion-icon name="globe-outline"></ion-icon>
+                <strong>Global</strong>
+                
+            </div>
+        </a>
+        <a href="page-about.html" class="item">
+            <div class="col">
+                <ion-icon name="person-outline"></ion-icon>
+                <strong>About</strong>
+                
+            </div>
+        </a>
+        <a href="page-contact.html" class="item">
+            <div class="col">
+                <ion-icon name="call-outline"></ion-icon>
+                <strong>Contact</strong>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="Settings-outline"></ion-icon>
+                <strong>Settings</strong>
+            </div>
+        </a>
+        
+        
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        
+                        <div class="in">
+                            <strong>PeGu Covid Meter</strong>
+                            <div class="text-muted">
+                                
+                                PeGu
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item ">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Home
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="component-card.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="alert"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Symtoms</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-about.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    About us 
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="page-contact.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Contact us</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Settings</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+
+                </div>
+
+               
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+    <script>
+        setTimeout(() => {
+            notification('notification-welcome', 5000);
+        }, 2000);
+    </script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="resources/js/countries.js"></script>
+  <script src="resources/js/app.js"></script>
+
+</body>
+
+</html>

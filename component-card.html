@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Symtoms</div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section mt-2">
+            <div class="card">
+                <img src="assets/img/sample/photo/high fever.jpg" class="card-img-top" alt="image">
+                <div class="card-body">
+                   
+                    <h5 class="card-title">High fever</h5>
+                    <p class="card-text">Fever is a key symptom, experts say. Don't fixate on a number, but know it's not a fever until temperature reaches at least 39°C.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section mt-2">
+            <div class="card">
+                <img src="assets/img/sample/photo/Sortness of Breath.jpg" class="card-img-top" alt="image">
+                <div class="card-body">
+                    
+                    <h5 class="card-title">
+                        Sortness of Breath</h5>
+                    <p class="card-text">You feel hot to touch on your chest or back It is a common sign and also may appear in 2-10 days if you affected.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section mt-2">
+            <div class="card">
+                <img src="assets/img/sample/photo/Dry Cough.jpg" class="card-img-top" alt="image">
+                <div class="card-body">
+                    
+                    <h5 class="card-title">Dry Cough</h5>
+                    <p class="card-text">
+                        Dry Cough
+                        Coughing is another key symptom, but it's not just any cough, said Schaffner. It should be a dry cough that you feel in your chest.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section mt-2" style="margin-bottom: 30px;">
+            <div class="card">
+                <img src="assets/img/sample/photo/Headache.jpg" class="card-img-top" alt="image">
+                <div class="card-body">
+                    
+                    <h5 class="card-title">Headache</h5>
+                    <p class="card-text">Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing or shortness of breath.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">About Covid-19</div>
+
+            <div class="accordion" id="accordionExample1">
+
+                <div class="item">
+                    <div class="accordion-header">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#accordion1">
+                            What is the COVID-19 virus?
+                        </button>
+                    </div>
+                    <div id="accordion1" class="accordion-body collapse" data-parent="#accordionExample1">
+                        <div class="accordion-content">
+                            The first symptoms of COVID-19 and influenza (flu) infections are often very similar. They both cause fever and similar respiratory symptoms, which can then range from mild through to severe disease, and sometimes can be fatal.
+
+Both viruses are also transmitted in the same way, by coughing or sneezing, or by contact with hands, surfaces or objects contaminated with the virus. As a result, the same public health measures, such as hand hygiene (hand washing), good respiratory etiquette (coughing into your elbow or into a tissue and immediately disposing of the tissue) and good household cleaning are important actions to prevent both infections.
+
+The speed of transmission is an important difference between the two viruses. Influenza typically has a shorter incubation period (the time from infection to appearance of symptoms) than COVID-19. This means that influenza can spread faster than COVID-19.
+
+While the range of symptoms for the two viruses is similar, the fraction with severe disease appears to be higher for COVID-19. While most people have mild symptoms, approximately 15% of people have severe infections and 5% require intensive care in a hospital ICU. The proportions of severe and critical COVID-19 infections are higher than for influenza infections.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="accordion-header">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#accordion4">
+                            Is COVID-19 worse than FLU?
+                        </button>
+                    </div>
+                    <div id="accordion4" class="accordion-body collapse" data-parent="#accordionExample1">
+                        <div class="accordion-content">
+                            COVID-19 has a higher rate of severe disease and mortality in nearly every age group, compared with influenza (flu).
+John Hopkins Bloomberg School of Public Health reported that “COVID-19 has killed more people in the US than flu has in the last five years.”
+In the UK, data revealed that between January-August, COVID-19 killed 3.4 times as many people in 2020 than flu and pneumonia combined.
+The US Centers for Disease Control and Prevention (CDC) estimate that in the United States flu has resulted in “between 12,000-61,000 deaths annually since 2010.” COVID-19 has resulted in more than 304,000 deaths in the US. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="accordion-header">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#accordion3">
+                            How is the virus spread?
+                        </button>
+                    </div>
+                    <div id="accordion3" class="accordion-body collapse" data-parent="#accordionExample1">
+                        <div class="accordion-content">
+                            The first symptoms of COVID-19 and influenza (flu) infections are often very similar. They both cause fever and similar respiratory symptoms, which can then range from mild through to severe disease, and sometimes can be fatal.
+
+Both viruses are also transmitted in the same way, by coughing or sneezing, or by contact with hands, surfaces or objects contaminated with the virus. As a result, the same public health measures, such as hand hygiene (hand washing), good respiratory etiquette (coughing into your elbow or into a tissue and immediately disposing of the tissue) and good household cleaning are important actions to prevent both infections.
+
+The speed of transmission is an important difference between the two viruses. Influenza typically has a shorter incubation period (the time from infection to appearance of symptoms) than COVID-19. This means that influenza can spread faster than COVID-19.
+
+While the range of symptoms for the two viruses is similar, the fraction with severe disease appears to be higher for COVID-19. While most people have mild symptoms, approximately 15% of people have severe infections and 5% require intensive care in a hospital ICU. The proportions of severe and critical COVID-19 infections are higher than for influenza infections.
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="item">
+                    <div class="accordion-header">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#accordion5">
+                            How effective are masks?
+                        </button>
+                    </div>
+                    <div id="accordion5" class="accordion-body collapse" data-parent="#accordionExample1">
+                        <div class="accordion-content">
+                            Mask wearing is a very simple and effective way to reduce transmission and save lives. The degree of protection depends on the type of mask, how well they worn and on other factors such as the behaviour of people wearing them and the behaviour of air droplets in different settings.
+Masks alone are not enough to fully protect someone from the virus, but they still have an essential role to play in protecting high risk individuals, such as frontline health care workers. For most people the greatest benefit lies not in protecting the wearer, but those around them. When combined with other safety measures like physical distancing and practicing good hygiene, they are a very effective tool with little to no disruption to normal life.
+COVID-19 is predominantly spread via respiratory droplets that are released when someone that has been infected coughs, sneezes or talks. Breathing those droplets in through your nose can lead to infection. Masks act as a barrier preventing people from spreading these potentially infectious droplets.
+Using a mask to just cover the mouth and not the nose only addresses part of risk, and so could defeat the whole purpose of wearing one in the first place. Similarly, eye protection can also be important, particularly when physical distancing isn’t possible.  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+
+
+
+        
+
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu rounded ">
+        <a href="index.html" class="item ">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+                <strong>Home</strong>
+            </div>
+        </a>
+        <a href="page-blank.html" class="item">
+            <div class="col">
+                <ion-icon name="globe-outline"></ion-icon>
+                <strong>Global</strong>
+                
+            </div>
+        </a>
+        <a href="page-about.html" class="item">
+            <div class="col">
+                <ion-icon name="person-outline"></ion-icon>
+                <strong>About</strong>
+                
+            </div>
+        </a>
+        <a href="page-contact.html" class="item">
+            <div class="col">
+                <ion-icon name="call-outline"></ion-icon>
+                <strong>Contact</strong>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="Settings-outline"></ion-icon>
+                <strong>Settings</strong>
+            </div>
+        </a>
+        
+        
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                        </div>
+                        <div class="in">
+                            <strong>Julian Gruber</strong>
+                            <div class="text-muted">
+                                <ion-icon name="location"></ion-icon>
+                                California
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Discover
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-components.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Components
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Pages</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Chat</div>
+                                    <span class="badge badge-danger">5</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="listview-title mt-2 mb-1">
+                        <span>Friends</span>
+                    </div>
+                    <ul class="listview image-listview flush transparent no-line">
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sophie Asveld</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sebastian Bennett</div>
+                                    <span class="badge badge-danger">6</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Beth Murphy</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Amelia Cabal</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Henry Doe</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- sidebar buttons -->
+                <div class="sidebar-buttons">
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="archive-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>

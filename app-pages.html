@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body class="bg-white">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Setting</div>
+        <div class="right">
+            <a href="tel:+94750143840" class="headerButton">
+                <ion-icon name="call-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- Search Component -->
+    <div id="search" class="appHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="Search...">
+                <i class="input-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </i>
+                <a href="javascript:;" class="ml-1 close toggle-searchbox">
+                    <ion-icon name="close-circle"></ion-icon>
+                </a>
+            </div>
+        </form>
+    </div>
+    <!-- * Search Component -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="header-large-title">
+            <h1 class="title">Settings</h1>
+        </div>
+
+        
+        <div class="listview-title mt-2">Settings</div>
+        <ul class="listview image-listview flush transparent">
+            <li>
+                <div class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="moon-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <div>Dark Mode</div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                id="darkmodesidebar">
+                            <label class="custom-control-label" for="darkmodesidebar"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="wifi"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <div>
+                            Online/Offline Detection
+                            
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch4" checked />
+                            <label class="custom-control-label" for="customSwitch4"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <div>
+                            OS Detection
+                            
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch5" checked />
+                            <label class="custom-control-label" for="customSwitch5"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="component-os-detection.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        OS Detector
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-online-detection.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="wifi-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        Online / Offline Detection
+                    </div>
+                </a>
+            </li>
+            
+        
+            <div class="listview-title mt-2">report or suggest</div>
+            <ul class="listview image-listview flush transparent mb-1"></ul>
+            <li>
+                <a href="page-contact.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        Contact us
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="page-contact.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="hammer-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        Report an issue
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="page-contact.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="golf-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        Suggestions
+                    </div>
+                </a>
+            </li>
+            <div class="listview-title mt-2">Other</div>
+           <ul class="listview image-listview flush transparent">
+            <li>
+                <a href="component-card.html" class="item">
+                    <div class="icon-box bg-success">
+                        <ion-icon name="alert"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <div>Symtoms</div>
+                        
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="page-contact.html" class="item">
+                    <div class="icon-box bg-success">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        Give us a feedback
+                    </div>
+                </a>
+            </li>
+            
+            
+        </ul>
+
+
+        <!-- app footer -->
+        <div class="appFooter" style="margin-top: 20px;">
+            
+            
+            <div>PeGu Covid Meter is a live free coronavirus tracker.</div>
+
+            <div class="footer-title">
+                Copyright © PeGu 2020. All Rights Reserved.
+            </div>
+
+            <div class="mt-2">
+                
+                <a href="https://github.com/endhambot" class="btn btn-icon btn-sm btn-twitter">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                
+                <a href="mailto:endhamfc@gmail.com" class="btn btn-icon btn-sm btn-instagram">
+                    <ion-icon name="logo-google"></ion-icon>
+                </a>
+                <a href="https://wa.me/qr/Q4VXDDGTICEDC1" class="btn btn-icon btn-sm btn-whatsapp">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                
+            </div>
+
+        </div>
+        <!-- * app footer -->
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu rounded ">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+                <strong>Home</strong>
+            </div>
+        </a>
+        <a href="page-blank.html" class="item">
+            <div class="col">
+                <ion-icon name="globe-outline"></ion-icon>
+                <strong>Global</strong>
+                
+            </div>
+        </a>
+        <a href="page-about.html" class="item">
+            <div class="col">
+                <ion-icon name="person-outline"></ion-icon>
+                <strong>About</strong>
+                
+            </div>
+        </a>
+        <a href="page-contact.html" class="item">
+            <div class="col">
+                <ion-icon name="call-outline"></ion-icon>
+                <strong>Contact</strong>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item active">
+            <div class="col">
+                <ion-icon name="Settings-outline"></ion-icon>
+                <strong>Settings</strong>
+            </div>
+        </a>
+        
+        
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        
+                        <div class="in">
+                            <strong>PeGu</strong>
+                            <div class="text-muted">
+                                <ion-icon name="location"></ion-icon>
+                                Sri Lanka
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item ">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Home
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-about.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    About us 
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="page-contact.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Contact us</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Settings</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+
+                </div>
+
+               
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+</body>
+
+</html>

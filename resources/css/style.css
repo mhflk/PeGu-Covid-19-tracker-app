@@ -1,0 +1,474 @@
+/* ---------------------------------------------- */
+/*            CODE EXPLAINED TUTORIALS            */
+/*         www.youtube.com/CodeExplained          */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/*                  LOAD FONTS                    */
+/* ---------------------------------------------- */
+@font-face{
+    font-family: 'Gilroy';
+    src: url(./Gilroy-Regular.woff) format(woff);
+}
+/* ---------------------------------------------- */
+/*                    GENERAL                     */
+/* ---------------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+.hide{
+    display: none;
+}
+.fadeIn{
+    animation: fade 0.5s ease-in-out;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------- */
+/*                    HEADER                      */
+/* ---------------------------------------------- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+
+
+    margin: 0 auto;
+
+    background-color: #F3F2F2;
+}
+/* -------- LOGO -------- */
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo img{
+    width: 60px;
+}
+.logo p {
+    font-weight: bold;
+    color: #6a149b;
+}
+/* -------- NAV -------- */
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:last-child{
+    padding-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #6a149b;
+    padding: 10px;
+}
+/* ---------------------------------------------- */
+/*                      MAIN                      */
+/* ---------------------------------------------- */
+main{
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 100%;
+    height: 100%;
+}
+/* -------- BG IMAGE -------- */
+.stats{
+    font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.55rem;
+  letter-spacing: -0.015rem;
+  color: #4F5050;
+  background: #f9f9f900;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* -------- LATEST REPORT -------- */
+.latest-report{
+    
+    justify-content: space-between;
+    align-items: center;
+
+
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    color: #FFF;
+}
+
+.country{
+    height: 100px;
+}
+.recovered{
+    height: 65px;
+}
+.total-cases{
+    height: 65px;
+}
+.today-cases{
+    height: 65px;
+}
+.deaths {
+    height: 65px;
+}
+
+.name{
+    font-size: 2.2em;
+    color: #1E74FD;
+    font-weight: bold;
+}
+.name12{
+    font-size: 2.2em;
+    color: #1E74FD;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+
+
+
+.recovered1 .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #009688;
+    margin-top: 10px;
+}
+
+
+.recovered .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #009688;
+}
+.todayCases .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #f44336;
+    margin-top: 10px;
+}
+
+.deaths .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #f44336;
+    margin-top: 10px;
+}
+
+.total-cases .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #141515ec;
+    margin-top: 10px;
+}
+
+.today-cases .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #141515ec;
+    margin-top: 10px;
+}
+
+
+.recovered .new-value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #009688;
+    margin-top: 10px;
+}
+/* -------- CHART -------- */
+.chart{
+    width: 80%;
+    height: 70vh;
+    min-height: 500px;
+
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-bottom: 60px;
+}
+/* -------- SEARCH COUNTRY -------- */
+.search-country{
+    position: relative;
+    top: 10px;
+}
+.search-box{
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+    height: 30px;
+
+    background-color: #111;
+
+    z-index: 1;
+}
+.search-box input{
+    width: 300px;
+    height: 25px;
+
+    border: none;
+
+    background-color: transparent;
+    color: #FFF;
+
+    padding-left: 15px;
+
+    font-size: 1.1em;
+    z-index: 1;
+}
+.search-box img{
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.country-list{
+    display: flex;
+
+    position: absolute;
+    top: 30px;
+
+    width: 300px;
+    height: 300px;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0.99;
+
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.country-list ul{
+    width: 100%;
+    z-index: 1;
+}
+
+.country-list ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFF;
+    z-index: 1;
+}
+.country-list ul li:hover{
+    border-left: 1px solid #FFF;
+    z-index: 1;
+}
+/* SCROLL BAR */
+.country-list::-webkit-scrollbar {
+    width: 10px;
+    z-index: 1;
+  }
+  
+  /* Track */
+  .country-list::-webkit-scrollbar-track {
+    background: #111;
+  }
+  
+  /* Handle */
+  .country-list::-webkit-scrollbar-thumb {
+    background: #F1F1F1;
+    z-index: 1;
+  }
+  
+  /* Handle on hover */
+  .country-list::-webkit-scrollbar-thumb:hover {
+    background: #FFF;
+    z-index: 1;
+  }
+/* ---------------------------------------------- */
+/*                    FOOTER                      */
+/* ---------------------------------------------- */
+footer{
+    max-width: 1200px;
+    height: 60px;
+
+    margin: 0 auto;
+    background-color: #6a149b;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright p{
+    color: #FFF;
+}
+/* ---------------------------------------------- */
+/*             SCREEN WIDTH < 600px               */
+/* ---------------------------------------------- */
+@media screen and (max-width: 600px){
+    .latest-report{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 120px;
+}
+
+.loader.hidden {
+    animation: fadeOut 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.nav {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+.nav__link--active {
+    color: #009578;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+
+
+
+.div1{
+   background-image: linear-gradient(rgba(255, 0, 0, 0.2),rgba(255, 0, 0, 0.2));
+    border-bottom: 5px solid #ff3838;
+    padding: 10px;
+    width: 85%;
+    
+    
+    height: 110px;
+    
+}
+
+.div2{
+    background-image: linear-gradient(rgba(0, 128, 0, 0.2),rgba(0, 128, 0, 0.2));
+    border-bottom: 5px solid #27ae60;
+    padding: 15px;
+    width: 85%;
+    height: 110px;
+    
+    
+    
+}
+
+.div3{
+    background-image: linear-gradient(rgba(128, 128, 128, 0.4),rgba(128, 128, 128, 0.4));
+    border-bottom: 5px solid #576574;
+     padding: 15px;
+     width: 85%;
+     
+     height: 110px;
+     
+ }
+
+ .div5{
+    background-image: linear-gradient(rgba(0, 128, 0, 0.2),rgba(0, 128, 0, 0.2));
+    border-bottom: 5px solid #27ae60;
+    padding: 15px;
+    width: 85%;
+    
+
+    
+}
+
+ 
+
+
+ @media screen and (max-width:767px){
+    .div1 , .div2 , .div3, .div4, .div5{ margin-bottom:20px;  }
+    
+    }
+
+ @media screen and (max-width:1824px){
+    .div1 , .div2 , .div3, .div4, .div5{ margin-bottom:20px;  }
+    
+    }
+
+
+

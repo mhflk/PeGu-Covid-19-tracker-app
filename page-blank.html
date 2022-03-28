@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+     
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
+    <link rel="stylesheet" href="global/leaflet.css">
+    <link rel="stylesheet" href="global/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Global</div>
+        <div class="right">
+            <a href="app-pages.html" class="headerButton toggle-searchbox">
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+
+        <div class="container" style="margin-top:25px;">    
+  
+            <h3><span class="material-icons icon-1">graphic_eq</span> Global Status</h3>
+            <div class="row">
+            <div class="col-md-4 col-sm-4">
+                         <div class="div1 mx-auto">
+                            <h5>Cases</h5>
+                             
+                         </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="div2 mx-auto">
+               <h5>Recovered</h5>
+                
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="div3 mx-auto">
+               <h5>Deaths</h5>
+                
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="div4 mx-auto">
+               <h5>Today Cases</h5>
+                
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="div5 mx-auto">
+               <h5>Today Recovered</h5>
+                
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="div6 mx-auto">
+               <h5>Today Deaths</h5>
+                
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          
+          </div>
+          
+          </div>
+          <div class="container-fluid sec-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-8" style="margin-top: 30px;">
+                <h3><span class="material-icons icon-1" style="margin-bottom: 10px;">search</span> Search Country Status</h3>
+                <h3></h3>
+                <div class="form-group">
+                  <select  class="form-control" id="sel1">
+                    <option value="nill">-- Select Country --</option>
+                   
+                  </select>
+                  
+                </div>
+              <div  id="map" style=" width:100%;  height: 400px; margin-bottom: 20px; z-index: 0;">
+              
+              </div>
+              </div>
+          <div class="col-md-12  col-lg-4 "  style="margin-top: 30px; margin-bottom: 30px;">
+           <h3> <span class="material-icons icon-1">language</span> Continents list</h3> 
+           <div style="overflow-x: auto;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th id="countrylol">Country</th>
+                  <th style="color: #ff3838;">Cases</th>
+                  <th style="color: #27ae60;">Recovered</th>
+                  <th style="color: #637385;">Deaths</th> 
+                  <th style="color: #ff3838;">Active</th> 
+                  <th style="color: #bfb1f3;">critical</th> 
+                  <th style="color: #0d69e2;">population</th> 
+                </tr>
+              </thead>
+              <tbody class="tbl">
+               
+                
+                  
+              </tbody>
+            </table>
+           </div> 
+           
+          </div>
+          
+            </div>
+          
+          
+          
+          
+          
+          
+            
+          </div>
+
+
+
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu rounded ">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+                <strong>Home</strong>
+            </div>
+        </a>
+        <a href="page-blank.html" class="item active">
+            <div class="col">
+                <ion-icon name="globe-outline"></ion-icon>
+                <strong>Global</strong>
+                
+            </div>
+        </a>
+        <a href="page-about.html" class="item">
+            <div class="col">
+                <ion-icon name="person-outline"></ion-icon>
+                <strong>About</strong>
+                
+            </div>
+        </a>
+        <a href="page-contact.html" class="item">
+            <div class="col">
+                <ion-icon name="call-outline"></ion-icon>
+                <strong>Contact</strong>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="Settings-outline"></ion-icon>
+                <strong>Settings</strong>
+            </div>
+        </a>
+        
+        
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        
+                        <div class="in">
+                            <strong>PeGu</strong>
+                            <div class="text-muted">
+                                <ion-icon name="location"></ion-icon>
+                                Sri Lanka
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item ">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Home
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-about.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    About us 
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="page-contact.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Contact us</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Settings</div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+
+                </div>
+
+               
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
+    <script src="global/script.js"></script>
+
+
+</body>
+
+</html>
